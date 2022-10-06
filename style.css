@@ -1,0 +1,185 @@
+/* General styles */
+:root {
+    --bg-header: rgb(4, 4, 199);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 0 1rem 0 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    color: white;
+    background-color: rgb(234, 46, 109);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .8rem 1.6rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 3.5rem 0;
+}
+
+
+header {
+    background-color: var(--bg-header);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-right: 1.5rem;
+}
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero__content .hero__left h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: white;
+}
+
+.hero__left .watch {
+    margin-top: 2rem;
+}
+
+.hero__content .hero__right {
+    flex-basis: 50%;
+}
+
+main {
+    background-color: rgb(235, 235, 235);
+}
+
+.players__section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.players__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.player {
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgb(209, 208, 208);
+}
+
+.player h2 {
+    margin: .8rem 0;
+}
+
+.player p {
+    color: rgb(87, 86, 86);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0;
+}
+
+.footer__content h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.footer__content p {
+    color: rgb(56, 56, 56);
+    margin: 1rem 0;
+}
+
+.footer__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 40%;
+    margin: 0 auto;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 1rem 0;
+}
+
+.social__icons img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+
+/* Mobile Responsibility  */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .hero__content {
+        flex-direction: column;
+    }
+
+    .hero__content .hero__right {
+        padding-top: 2rem;
+        flex-basis: 100%;
+    }
+
+
+    .players__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .footer__content h1 {
+        font-size: 3rem;
+    }
+
+    .footer__right {
+        padding-top: 2rem;
+    }
+
+    .footer__copy {
+        width: 100%;
+    }
+}
